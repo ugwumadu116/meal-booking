@@ -39,12 +39,12 @@ a {
   justify-content: center;
 }
 .header img {
-  width: 70px;
+  width: 100px;
   height: 60px;
   border-radius: 50%;
   margin-bottom: 100px;
 }
-.container button {
+.container .login {
   background: transparent;
   padding: 7px 45px;
   border: 2px solid #fff;
@@ -52,8 +52,22 @@ a {
   font-size: 20px;
   color: white;
 }
-.container button:hover {
+.container .login:hover {
   background: #1ec27b;
   color: #fdf9f8;
+  transform: scale(0.9, 0.9);
+}
+.container .signup {
+  background: #1ec27b;
+  padding: 7px 45px;
+  border: 2px solid #fff;
+  margin: 30px;
+  font-size: 20px;
+  color: white;
+}
+.container .signup:hover {
+  background: transparent;
+  color: #1ec27b;
+  font-weight: bold;
   transform: scale(0.9, 0.9);
 }
