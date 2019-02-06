@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Meal Booking</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Muli"
       rel="stylesheet"
@@ -22,8 +23,14 @@
       media="screen"
       href="./css/main.css"
     />
-    <script src="./js/main.js"></script>
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
   </head>
+
   <body>
     <section id="home">
       <div class="header">
@@ -35,5 +42,70 @@
         <button class="login">login</button>
       </div>
     </section>
+    <section id="register">
+      <form>
+        <div class="formLogo">
+          <img src="./img/chef.svg" alt="logo" />
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <div class="formGroup">
+          <label for="fname">First Name:</label>
+          <input type="text" />
+        </div>
+        <div class="formGroup">
+          <label for="lname">Last Name:</label>
+          <input type="text" />
+        </div>
+        <div class="formGroup">
+          <label for="username">Username:</label>
+          <input type="text" />
+        </div>
+        <div class="formGroup">
+          <label for="email">Email:</label>
+          <input type="email" />
+        </div>
+        <div class="formGroup">
+          <label for="phoneNumber">Phone Number:</label>
+          <input type="number" />
+        </div>
+        <div class="formGroup">
+          <label for="password">Password:</label>
+          <input type="text" />
+        </div>
+        <div class="formGroup">
+          <label for="confirmPassword">confirm password:</label>
+          <input type="text" />
+        </div>
+        <div class="submitForm">
+          <button>signup</button>
+        </div>
+        <div class="formGroup">
+          <h4>Already a member? <button class="loginCaller">signin</button></h4>
+        </div>
+      </form>
+    </section>
+    <section id="signinForm">
+      <form>
+        <div class="signinLogo">
+          <img src="./img/chef.svg" alt="logo" />
+          <i class="fa fa-times" id="cancel"  aria-hidden="true"></i>
+        </div>
+        <div class="signinGroup">
+          <label for="email">Email:</label>
+          <input type="email" />
+        </div>
+        <div class="signinGroup">
+          <label for="password">Password:</label>
+          <input type="text" />
+        </div>
+        <div class="submitSign">
+          <button>login</button>
+        </div>
+        <div class="signinGroup">
+          <h4>Not a member? <button class="signupCaller">signup</button></h4>
+        </div>
+      </form>
+    </section>
+    <script src="./js/main.js"></script>
   </body>
 </html>
