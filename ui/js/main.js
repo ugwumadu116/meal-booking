@@ -7,7 +7,7 @@ const register = document.getElementById("register");
 closeForm.addEventListener("click", closeSignup);
 
 const signupCaller = document.querySelector(".signupCaller");
-signupCaller.addEventListener("click", callSignupForm);
+signupCaller.addEventListener("click", signupForm);
 
 const login = document.querySelector(".login");
 login.addEventListener("click", callLoginForm);
@@ -18,7 +18,13 @@ closeLogin.addEventListener("click", closeLoginForm);
 const signinForm = document.getElementById("signinForm");
 
 const loginCaller = document.querySelector(".loginCaller");
-loginCaller.addEventListener("click", callLoginForm);
+loginCaller.addEventListener("click", loginForm);
+
+function loginForm(e) {
+  e.preventDefault();
+  register.style.display = "none";
+  signinForm.style.display = "block";
+}
 
 function callLoginForm() {
   register.style.display = "none";
@@ -30,6 +36,11 @@ function closeLoginForm(e) {
 }
 
 function callSignupForm() {
+  signinForm.style.display = "none";
+  register.style.display = "block";
+}
+function signupForm(e) {
+  e.preventDefault();
   signinForm.style.display = "none";
   register.style.display = "block";
 }
