@@ -3,6 +3,8 @@ html {
 }
 * {
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 body {
   margin: 0px;
@@ -108,7 +110,9 @@ li {
   color: black;
 }
 
-#orders {
+#orders,
+#meals,
+#menu {
   margin-left: 220px;
 }
 #orders .container {
@@ -180,6 +184,65 @@ table thead th {
 }
 tbody td {
   padding: 0px 10px;
+}
+#menu .menuheader {
+  margin-top: 50px;
+  background: greenyellow;
+  display: flex;
+}
+#meals .container,
+#menu .container {
+  display: flex;
+  margin-top: 50px;
+  width: auto;
+  height: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#meals .card,
+#menu .card {
+  width: 340px;
+  height: auto;
+  margin: 22px 5px;
+  font-size: 18px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+#meals .container .card .imgbox,
+#menu .container .card .imgbox {
+  height: 100%;
+  box-sizing: border-box;
+}
+#meals .container .card .imgbox img,
+#menu .container .card .imgbox img {
+  display: block;
+  width: 340px;
+  height: 200px;
+}
+#meals .card .price,
+#menu .card .price {
+  position: relative;
+  top: -180px;
+  left: 271px;
+  background: #1ec27b;
+  color: white;
+  font-size: 22px;
+  padding: 0 8px;
+}
+#meals .card .details button,
+#menu .card .details button {
+  color: #fdf9f8;
+  border: 2px solid transparent;
+  background: #ff4faf;
+  width: 100px;
+  padding: 5px 0;
+  margin: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.btn {
+  display: flex;
+  justify-content: center;
 }
 @media (max-width: 750px) {
   #header h1 {
