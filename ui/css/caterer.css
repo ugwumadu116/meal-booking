@@ -1,0 +1,265 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Space Mono", "Muli", sans-serif;
+  background: #f4f6f9;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0px;
+}
+li {
+  list-style: none;
+}
+
+#sidenav {
+  background: #302043;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+#sidenav .topic {
+  color: #eaedf3;
+  font-family: "Space Mono";
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+#sidenav .userImg {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto 0 auto;
+  width: 90px;
+  border-radius: 50%;
+  height: 90px;
+  background: url(../img/pass2.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#sidenav nav a {
+  display: block;
+  text-decoration: none;
+  color: #eaedf3;
+  font-size: 15px;
+  margin-bottom: 10px;
+  padding: 15px 30px;
+  font-weight: 300;
+  transition: all 0.3s ease-in-out;
+}
+
+#sidenav nav a:hover {
+  background: #282639;
+  border-left: 5px solid #92cf48;
+  padding: 15px 30px 15px 25px;
+}
+
+#sidenav nav a:hover i {
+  color: #92cf48;
+}
+
+#sidenav nav {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#sidenav nav .active {
+  background: #282639;
+  border-left: 5px solid #92cf48;
+  padding: 15px 30px 15px 25px;
+}
+
+#sidenav nav .active i {
+  color: #92cf48;
+}
+
+#sidenav nav i {
+  margin-right: 0.8rem;
+  color: #eaedf3;
+  font-size: 1.4rem;
+  display: inline-block;
+  width: 30px;
+  position: relative;
+  top: 3px;
+}
+#header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+#header h1 {
+  margin: 0px;
+  color: black;
+}
+
+#orders,
+#meals {
+  margin-left: 220px;
+}
+#orders .container {
+  display: flex;
+  margin-top: 50px;
+  width: auto;
+  height: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#orders .card {
+  width: 640px;
+  height: auto;
+  box-shadow: 0px 0px 7px 3px gray;
+  padding: 20px;
+  margin: 22px 5px;
+  font-size: 18px;
+}
+#orders .container .details img {
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  background-size: cover;
+}
+#orders .container .details {
+  display: flex;
+}
+#orders .container .card .details .nameInfo {
+  margin-right: auto;
+}
+#orders .status h3 {
+  margin: 10px 0px;
+}
+#orders .status button {
+  color: #fdf9f8;
+  border: 2px solid transparent;
+  background: #1ec27b;
+  width: 100px;
+  padding: 5px 0;
+  margin-bottom: 0px;
+  transition: all 0.5s ease-in-out;
+}
+#orders .status button:hover {
+  background: transparent;
+  color: black;
+  border: solid #1ec27b;
+  transform: scale(0.9, 0.9);
+}
+#orders .status select {
+  color: #fdf9f8;
+  border: 2px solid transparent;
+  background: #1ec27b;
+  width: 80px;
+  padding: 5px 0;
+  margin-right: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table thead th {
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: left;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+tbody td {
+  padding: 0px 10px;
+}
+
+/* #meals .container {
+  display: flex;
+  margin-top: 50px;
+  width: auto;
+  height: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+} */
+#meals .container {
+  display: flex;
+  margin-top: 50px;
+  width: auto;
+  height: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#meals .card {
+  width: 340px;
+  height: auto;
+  margin: 22px 5px;
+  font-size: 18px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+#meals .container .card .imgbox {
+  height: 100%;
+  box-sizing: border-box;
+}
+#meals .container .card .imgbox img {
+  display: block;
+  width: 340px;
+  height: 200px;
+  background: linear-gradient(to top, purple, blue, pink);
+}
+#meals .card .price {
+  position: relative;
+  top: -180px;
+  left: 271px;
+  background: #1ec27b;
+  color: white;
+  font-size: 22px;
+  padding: 0 8px;
+}
+#meals .card .details button {
+  color: #fdf9f8;
+  border: 2px solid transparent;
+  background: #ff4faf;
+  width: 100px;
+  padding: 5px 0;
+  margin: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+/* #meals .card .price {
+  position: relative;
+  top: -180px;
+  left: 271px;
+  background: #1ec27b;
+  color: white;
+  font-size: 22px;
+  padding: 0 8px;
+}
+#meals .container .card img {
+  width: 340px;
+  height: 200px;
+  background: linear-gradient(to top, purple, blue, pink);
+} */
+@media (max-width: 750px) {
+  #header h1 {
+    margin: 0px 0px 0px auto;
+    padding-right: 50px;
+  }
+}
