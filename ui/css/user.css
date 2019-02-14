@@ -7,6 +7,9 @@ html {
   padding: 0px;
   font-size: 14px;
 }
+button {
+  cursor: pointer;
+}
 body {
   margin: 0px;
   padding: 0px;
@@ -116,15 +119,13 @@ li {
 #header .menu {
   flex: 1;
 }
-#header .cart a {
-  color: #ff4faf;
-}
+
 #header .cart span {
   position: relative;
-  left: -30px;
+  left: -10px;
   top: -15px;
   background: #92cf48;
-  font-size: 12px;
+  font-size: 15px;
   padding: 3px;
   border-radius: 50%;
   color: #fff;
@@ -132,6 +133,8 @@ li {
 #header .fa-shopping-cart {
   margin: 10px;
   font-size: 25px;
+  color: #ff4faf;
+  cursor: pointer;
 }
 #header .fa-bars {
   display: none;
@@ -169,12 +172,14 @@ li {
   width: 240px;
   height: 150px;
 }
+
 #usermenu .container .card .imgbox .details p,
 #usermenu .container .card .imgbox .details .menuName {
   display: flex;
   justify-content: center;
   margin: 10px;
 }
+
 #usermenu .card .price {
   position: relative;
   top: -192px;
@@ -193,16 +198,51 @@ li {
   margin: 10px;
   transition: all 0.5s ease-in-out;
 }
+#cartHeader {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background: #fff;
+  height: 50px;
+  color: #302043;
+  display: flex;
+}
+#cartHeader .home {
+  flex: 1;
+}
+#cartHeader .home img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+#cartHeader .cart span {
+  position: relative;
+  left: -30px;
+  top: -15px;
+  background: #92cf48;
+  font-size: 12px;
+  padding: 3px;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+#cartHeader .fa-shopping-cart {
+  margin: 10px;
+  font-size: 25px;
+  color: #ff4faf;
+}
 #cart .cardheader {
-  margin-top: 50px;
-  margin-left: 20px;
+  margin-left: 250px;
+  margin-top: 60px;
+  font-size: 20px;
 }
 #cart .cardheader h1 {
   font-size: 20px;
 }
 #cart .container {
-  margin: 60px;
-  width: auto;
+  margin: 40px auto;
+  width: 550px;
   height: auto;
   font-size: 18px;
   background: #fff;
@@ -211,14 +251,66 @@ li {
 }
 #cart .card {
   display: flex;
+  height: auto;
 }
+
 #cart .container .card img {
-  width: 140px;
-  height: 100px;
-  margin: 20px;
+  width: 80px;
+  height: 80px;
+  margin-top: 15px;
+  border-radius: 50%;
 }
-#cart .card .details {
-  margin-top: 20px;
+#cart .container .card .cartName {
+  margin: 10px;
+  flex: 1;
+}
+#cart .container .card .cartQuatity {
+  margin: 10px;
+}
+#cart .container .card .cartQuatity input {
+  width: 60px;
+}
+#cart .container .card .cartPrice {
+  margin: 10px;
+}
+#cart .continue {
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+#cart .continue .back a {
+  color: #fdf9f8;
+  border: 2px solid transparent;
+  background: #ff4faf;
+  border-image-slice: 1;
+  font-size: 15px;
+  padding: 5px;
+  margin-right: 5px;
+  transition: all 0.5s ease-in-out;
+}
+#cart .continue .back a:hover {
+  background: transparent;
+  color: black;
+  transform: scale(0.9, 0.9);
+  border: 2px solid #1ec27b;
+}
+#cart .continue .next a {
+  color: #fdf9f8;
+  border: 2px solid transparent;
+  background: #1ec27b;
+  border-image-slice: 1;
+  font-size: 15px;
+  padding: 5px;
+  margin-right: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+#cart .continue .next a:hover {
+  background: transparent;
+  color: #1ec27b;
+  border: 2px solid #ff4faf;
+  font-weight: bold;
+  transform: scale(0.9, 0.9);
 }
 @media (max-width: 750px) {
   #usermenu .container {
@@ -250,5 +342,12 @@ li {
   #sidenav .fa-times:hover {
     color: #a9a9a9;
     transform: scale(0.9, 0.9);
+  }
+  #cart .container {
+    width: 300px;
+    margin: 40px auto;
+  }
+  #cart .cardheader {
+    margin-left: 10px;
   }
 }
