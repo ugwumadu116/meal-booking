@@ -5,6 +5,7 @@ html {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  font-size: 14px;
 }
 body {
   margin: 0px;
@@ -28,6 +29,9 @@ li {
   top: 0;
   left: 0;
   bottom: 0;
+}
+#sidenav .fa-times {
+  display: none;
 }
 #sidenav .topic {
   color: #eaedf3;
@@ -100,14 +104,17 @@ li {
   position: fixed;
   top: 0px;
   width: 100%;
-  background: white;
+  background: #000;
   height: 50px;
   display: flex;
   justify-content: center;
+  color: #fff;
+}
+#header i {
+  display: none;
 }
 #header h1 {
-  margin: 0px;
-  color: black;
+  font-size: 25px;
 }
 
 #orders,
@@ -186,9 +193,24 @@ tbody td {
   padding: 0px 10px;
 }
 #menu .menuheader {
-  margin-top: 50px;
-  background: greenyellow;
+  margin-top: 70px;
   display: flex;
+}
+#menu .menuheader button {
+  color: #fdf9f8;
+  border: 2px solid transparent;
+  background: #1ec27b;
+  border-image-slice: 1;
+  font-size: 15px;
+  padding: 5px;
+  margin-bottom: 0px;
+  transition: all 0.5s ease-in-out;
+}
+#menu .menuheader button:hover {
+  background: transparent;
+  color: black;
+  transform: scale(0.9, 0.9);
+  border: 2px solid #1ec27b;
 }
 #meals .container,
 #menu .container {
@@ -196,12 +218,19 @@ tbody td {
   margin-top: 50px;
   width: auto;
   height: auto;
-  justify-content: space-around;
   flex-wrap: wrap;
 }
-#meals .card,
+#meals .card {
+  width: 240px;
+  height: 265px;
+  margin: 22px 5px;
+  font-size: 18px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
 #menu .card {
-  width: 340px;
+  width: 240px;
   height: auto;
   margin: 22px 5px;
   font-size: 18px;
@@ -209,29 +238,33 @@ tbody td {
   box-shadow: 0 5px 15px rgb(0, 0, 0, 0.25);
   border-radius: 5px;
 }
-#meals .container .card .imgbox,
-#menu .container .card .imgbox {
-  height: 100%;
-  box-sizing: border-box;
-}
-#meals .container .card .imgbox img,
-#menu .container .card .imgbox img {
+#meals .container .card img,
+#menu .container .card img {
   display: block;
-  width: 340px;
-  height: 200px;
+  width: 240px;
+  height: 150px;
 }
-#meals .card .price,
+#menu .container .card .imgbox .details p,
+#menu .container .card .imgbox .details .menuName {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
 #menu .card .price {
+  color: #1ec27b;
+  font-size: 18px;
+  margin-left: auto;
+}
+#meals .card .price {
   position: relative;
-  top: -180px;
-  left: 271px;
+  top: -263px;
+  left: 170px;
   background: #1ec27b;
   color: white;
   font-size: 22px;
   padding: 0 8px;
 }
-#meals .card .details button,
-#menu .card .details button {
+#meals .card .details button {
   color: #fdf9f8;
   border: 2px solid transparent;
   background: #ff4faf;
@@ -245,8 +278,37 @@ tbody td {
   justify-content: center;
 }
 @media (max-width: 750px) {
+  #meals .container,
+  #menu .container {
+    justify-content: center;
+  }
+  #header i {
+    display: block;
+    font-size: 25px;
+    margin: 10px;
+  }
   #header h1 {
     margin: 0px 0px 0px auto;
     padding-right: 50px;
+  }
+  #sidenav {
+    display: none;
+  }
+  #orders,
+  #meals,
+  #menu {
+    margin: 10px;
+  }
+  #sidenav .fa-times {
+    display: block;
+    color: red;
+    float: right;
+    font-size: 20px;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  #sidenav .fa-times:hover {
+    color: #a9a9a9;
+    transform: scale(0.9, 0.9);
   }
 }
