@@ -38,14 +38,16 @@
           <img src="./img/chef.svg" alt="Home" />
         </a>
       </div>
+      <div class="headtext">
+        <h1>Cart</h1>
+      </div>
       <div class="cart">
-        <i class="fas fa-shopping-cart"></i> <span>2</span>
+        <a href="./cart.html">
+          <i class="fas fa-shopping-cart"></i> <span>2</span>
+        </a>
       </div>
     </section>
     <section id="cart">
-      <div class="cardheader">
-        <h1>Your shopping cart</h1>
-      </div>
       <div class="container">
         <div class="card">
           <div>
@@ -61,29 +63,12 @@
           </div>
           <div class="cartQuatity">
             <h1>Quantity</h1>
-            <input type="number" />
-          </div>
-          <div class="cartPrice">
-            <i class="fas fa-trash-alt"></i>
-          </div>
-          
-        </div>
-        <hr />
-        <div class="card">
-          <div>
-            <img
-              src="./img/turkey-dinner-setting_4460x4460.jpg"
-              alt="meal image"
+            <input
+              name="credit-number"
+              type="tel"
+              pattern="/[0-9]/"
+              maxlength="19"
             />
-          </div>
-          <div class="cartName">
-            <h3>Delux Thali-veg</h3>
-            <p>Lorem ipsumel, i Dicta.</p>
-            <span>Total $323</span>
-          </div>
-          <div class="cartQuatity">
-            <h1>Quantity</h1>
-            <input type="number" />
           </div>
           <div class="cartPrice">
             <i class="fas fa-trash-alt"></i>
@@ -104,7 +89,38 @@
           </div>
           <div class="cartQuatity">
             <h1>Quantity</h1>
-            <input type="number" />
+            <input
+              name="credit-number"
+              type="tel"
+              pattern="\d*"
+              maxlength="19"
+            />
+          </div>
+          <div class="cartPrice">
+            <i class="fas fa-trash-alt"></i>
+          </div>
+        </div>
+        <hr />
+        <div class="card">
+          <div>
+            <img
+              src="./img/turkey-dinner-setting_4460x4460.jpg"
+              alt="meal image"
+            />
+          </div>
+          <div class="cartName">
+            <h3>Delux Thali-veg</h3>
+            <p>Lorem ipsumel, i Dicta.</p>
+            <span>Total $323</span>
+          </div>
+          <div class="cartQuatity">
+            <h1>Quantity</h1>
+            <input
+              name="credit-number"
+              type="tel"
+              pattern="\d*"
+              maxlength="19"
+            />
           </div>
           <div class="cartPrice">
             <i class="fas fa-trash-alt"></i>
@@ -120,10 +136,9 @@
           </a>
         </div>
         <div class="next">
-          <a href="#">checkout</a>
+          <a href="./checkout.html">checkout</a>
         </div>
       </div>
     </section>
-    <!-- <script src="./js/admin.js"></script> -->
   </body>
 </html>
