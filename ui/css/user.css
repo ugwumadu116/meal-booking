@@ -243,7 +243,7 @@ li {
 
 #cart .container {
   margin: 60px auto;
-  width: 550px;
+  width: 750px;
   height: auto;
   font-size: 18px;
   background: #fff;
@@ -383,7 +383,7 @@ li {
 #checkout .check h2 {
   font-size: 18px;
 }
-#checkout .check .fa-credit-card {
+#checkout .check .fa-cc-visa {
   margin-left: auto;
 }
 #checkout .submitForm {
@@ -400,7 +400,113 @@ li {
   margin: 10px;
   transition: all 0.5s ease-in-out;
 }
+#orders {
+  margin-left: 220px;
+}
+#orders .container {
+  display: flex;
+  margin-top: 50px;
+  width: auto;
+  height: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
+#orders .card {
+  width: 640px;
+  height: auto;
+  box-shadow: 0px 0px 7px 3px gray;
+  padding: 20px;
+  margin: 22px 5px;
+  font-size: 18px;
+}
+#orders .container .details img {
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  background-size: cover;
+}
+
+#orders .container .details {
+  display: flex;
+}
+#orders .container .card .details .nameInfo {
+  margin-right: auto;
+}
+#orders .status h3 {
+  margin: 10px 0px;
+}
+#orders .status button {
+  color: #fdf9f8;
+  border: 2px solid transparent;
+  background: #1ec27b;
+  width: 100px;
+  padding: 5px 0;
+  margin-bottom: 0px;
+  transition: all 0.5s ease-in-out;
+}
+#orders .status button:hover {
+  background: transparent;
+  color: black;
+  border: solid #1ec27b;
+  transform: scale(0.9, 0.9);
+}
+#orders .status select {
+  color: #fdf9f8;
+  border: 2px solid transparent;
+  background: #1ec27b;
+  width: 80px;
+  padding: 5px 0;
+  margin-right: 10px;
+}
+#orders table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#orders table thead th {
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: left;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+#orders tbody td {
+  padding: 0px 10px;
+}
+#comfirm .container {
+  margin-top: 60px;
+}
+#comfirm .container .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+#comfirm .container .card i {
+  font-size: 200px;
+  margin: 10px;
+}
+#comfirm .container .card p {
+  margin: 20px;
+  font-size: 20px;
+}
+#comfirm .container .card a {
+  color: #fdf9f8;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  background: #1ec27b;
+  font-size: 20px;
+  width: 200px;
+  padding: 5px 5px;
+  margin: 10px;
+  transition: all 0.5s ease-in-out;
+}
+#comfirm .container .card a:hover {
+  background: transparent;
+  color: black;
+  transform: scale(0.9, 0.9);
+  border: solid #1ec27b;
+}
 @media (max-width: 750px) {
   #usermenu .container {
     justify-content: center;

@@ -79,6 +79,8 @@ a {
   top: -350px;
   margin: 0px 200px;
   background: #088f90;
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 0.25);
+  border-radius: 5px;
 }
 #signinForm {
   display: none;
@@ -86,6 +88,8 @@ a {
   top: -300px;
   margin: 0px 250px;
   background: #088f90;
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 0.25);
+  border-radius: 5px;
 }
 #register .formLogo,
 #signinForm .signinLogo {
