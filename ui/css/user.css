@@ -210,6 +210,14 @@ li {
 #cartHeader .home {
   flex: 1;
 }
+#cartHeader .headtext {
+  flex: 1;
+  font-size: 30px;
+}
+#cartHeader .headtext h1 {
+  font-size: 25px;
+}
+
 #cartHeader .home img {
   height: 30px;
   width: 30px;
@@ -232,16 +240,9 @@ li {
   font-size: 25px;
   color: #ff4faf;
 }
-#cart .cardheader {
-  margin-left: 250px;
-  margin-top: 60px;
-  font-size: 20px;
-}
-#cart .cardheader h1 {
-  font-size: 20px;
-}
+
 #cart .container {
-  margin: 40px auto;
+  margin: 60px auto;
   width: 550px;
   height: auto;
   font-size: 18px;
@@ -272,6 +273,11 @@ li {
 }
 #cart .container .card .cartPrice {
   margin: 10px;
+}
+#cart .container .card .cartPrice i {
+  color: #1ec27b;
+  font-size: 20px;
+  cursor: pointer;
 }
 #cart .continue {
   display: flex;
@@ -312,6 +318,89 @@ li {
   font-weight: bold;
   transform: scale(0.9, 0.9);
 }
+
+#checkout .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+#checkout .container .card {
+  margin: 60px auto;
+  width: 450px;
+  height: auto;
+  background: #fff;
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+#checkout .container .card h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  background: #ffd700;
+  padding: 10px;
+}
+#checkout .formGroup {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+#checkout input,
+#checkout select {
+  width: 355px;
+  padding: 0 20px;
+  text-decoration: none;
+  line-height: 50px;
+  font-size: 15px;
+  height: 50px;
+  border: 1px solid #e6e6e6;
+  border-bottom-width: 3px;
+  border-radius: 5px;
+}
+#checkout input:active,
+#checkout select:active {
+  border: 5px solid #7f00ff;
+  transition: all 0.1s ease-in-out;
+}
+#checkout input[type="checkbox"] {
+  width: 55px;
+  margin: 10px;
+  font-size: 20px;
+  height: 20px;
+  border: 1px solid #e6e6e6;
+  border-bottom-width: 3px;
+  border-radius: 5px;
+}
+#checkout .formGroup {
+  font-size: 18px;
+}
+#checkout .formGroup i {
+  font-size: 30px;
+  margin: 10px;
+  color: #7f00ff;
+}
+#checkout .check {
+  display: flex;
+}
+#checkout .check h2 {
+  font-size: 18px;
+}
+#checkout .check .fa-credit-card {
+  margin-left: auto;
+}
+#checkout .submitForm {
+  display: flex;
+  justify-content: center;
+}
+#checkout .submitForm button {
+  color: #fdf9f8;
+  border: 2px solid transparent;
+  background: #1ec27b;
+  font-size: 15px;
+  width: 150px;
+  padding: 5px 0;
+  margin: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
 @media (max-width: 750px) {
   #usermenu .container {
     justify-content: center;
@@ -345,9 +434,9 @@ li {
   }
   #cart .container {
     width: 300px;
-    margin: 40px auto;
+    margin: 60px auto;
   }
-  #cart .cardheader {
-    margin-left: 10px;
+  #checkout .container .card {
+    width: 370px;
   }
 }
