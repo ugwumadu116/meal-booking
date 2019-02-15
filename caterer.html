@@ -1,374 +1,360 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Meal Booking</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Muli"
-      rel="stylesheet"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://fonts.googleapis.com/css?family=Space+Mono"
-    />
-    <meta charset="utf-8" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="./css/caterer.css"
-    />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" 
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-     crossorigin="anonymous">
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Meal Booking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <body>      
-    <section id="header">
-      <i class="fas fa-bars" aria-hidden="true"></i>
-      <h1>Orders</h1>
-    </section>
-    <section id="sidenav">
-        <i class="fas fa-times"></i>
-      <div class="topic">JJ BUCKER</div>
-      <div class="userImg"></div>
-      <nav>
-        <a href="./index.html"
-          ><i class="fa fa-home" aria-hidden="true"></i> Home</a
-        >
-        <a href="./meals.html">
-            <i class="fas fa-utensils"></i> </i> Meals
-        </a>
-        <a href="./menu.html">
-            <i class="fas fa-bullhorn"></i> </i> Food Menu
-        </a>
-        <a class="active" href="./caterer.html">
-            <i class="fas fa-edit"></i> </i> All Orders
-        </a>
-        <a href="#">
-            <i class="fas fa-user"></i> </i> Profile
-        </a>
-        <a href="#"> <i class="fa fa-cog" aria-hidden="true"> </i> Settings </a>
-      </nav>
-    </section>
-    <section id="orders">
-      <div class="container">
-        <div class="card">
-          <div class="details">
-            <div> <img src="./img/pass2.jpg" alt="user image"></div>
-            <div class="nameInfo">
-              <p>Angel James</p>
-              <p>Today at 12:30 PM</p>
-            </div>
-            <div class="moneyInfo">
-              <p>Order id: <span>348</span></p>
-              <p>Total: <span>$ 106.00</span></p>
-            </div>
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Space+Mono" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/caterer.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+  <section id="header">
+    <i class="fas fa-bars" aria-hidden="true"></i>
+    <h1>Orders</h1>
+  </section>
+  <section id="sidenav">
+    <i class="fas fa-times"></i>
+    <div class="topic">JJ BUNKER</div>
+    <div class="userImg"></div>
+    <nav>
+      <a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      <a href="./meals.html">
+        <i class="fas fa-utensils"></i> </i> Meals
+      </a>
+      <a href="./menu.html">
+        <i class="fas fa-bullhorn"></i> </i> Food Menu
+      </a>
+      <a class="active" href="./caterer.html">
+        <i class="fas fa-edit"></i> </i> All Orders
+      </a>
+      <a href="#">
+        <i class="fas fa-user"></i> </i> Profile
+      </a>
+      <a href="#"> <i class="fa fa-cog" aria-hidden="true"> </i> Settings </a>
+    </nav>
+  </section>
+  <section id="orders">
+    <div class="container">
+      <div class="card">
+        <div class="details">
+          <div> <img src="./img/pass2.jpg" alt="user image"></div>
+          <div class="nameInfo">
+            <p>Angel James</p>
+            <p>Today at 12:30 PM</p>
           </div>
-          <div class="quantity">
-            <table>
-              <thead>
-                <tr>
-                  <th>Food</th>
-                  <th>Quantity</th>
-                  <th>Price</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td> Energy bar</td>
-                  <td>3</td>
-                  <td>$24.00</td>
-                </tr>
-                <tr>
-                  <td> Engastration (e.g., Turducken)</td>
-                  <td>5</td>
-                  <td>$24.00</td>
-                </tr>
-                <tr>
-                  <td> Fajita</td>
-                  <td>2</td>
-                  <td>$24.00</td>
-                </tr>
-                <tr>
-                  <td> Greek-American cuisine</td>
-                  <td>7</td>
-                  <td>$24.00</td>
-                </tr>
-                <tr>
-                  <td>Grits</td>
-                  <td>3</td>
-                  <td>$24.00</td>
-                </tr>
-                <tr>
-                  <td> Goulash</td>
-                  <td>4</td>
-                  <td>$24.00</td>
-                </tr>
-                <tr>
-                  <td> Haystack</td>
-                  <td>1</td>
-                  <td>$24.00</td>
-                </tr>
-                <tr>
-                  <td> Hangtown fry</td>
-                  <td>2</td>
-                  <td>$24.00</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="status">
-            <h3>Order Status </h3>
-            <form>
-                <select name="statusName" id="statusId">
-                    <option value="Active">Active</option>
-                    <option value="Accepted">Accepted</option>
-                    <option value="Canceled">Canceled</option>
-                  </select>
-                  <button>Change status</button>
-            </form>
+          <div class="moneyInfo">
+            <p>Order id: <span>348</span></p>
+            <p>Total: <span>$ 106.00</span></p>
           </div>
         </div>
-        <div class="card">
-            <div class="details">
-              <div> <img src="./img/pass2.jpg" alt="user image"></div>
-              <div class="nameInfo">
-                <p>Angel James</p>
-                <p>Today at 12:30 PM</p>
-              </div>
-              <div class="moneyInfo">
-                <p>Order id: <span>348</span></p>
-                <p>Total: <span>$ 106.00</span></p>
-              </div>
-            </div>
-            <div class="quantity">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Food</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td> Energy bar</td>
-                    <td>3</td>
-                    <td>$24.00</td>
-                  </tr>
-                  <tr>
-                    <td> Engastration (e.g., Turducken)</td>
-                    <td>5</td>
-                    <td>$24.00</td>
-                  </tr>
-                  <tr>
-                    <td> Fajita</td>
-                    <td>2</td>
-                    <td>$24.00</td>
-                  </tr>
-                  <tr>
-                    <td> Greek-American cuisine</td>
-                    <td>7</td>
-                    <td>$24.00</td>
-                  </tr>
-                  <tr>
-                    <td>Grits</td>
-                    <td>3</td>
-                    <td>$24.00</td>
-                  </tr>
-                  <tr>
-                    <td> Goulash</td>
-                    <td>4</td>
-                    <td>$24.00</td>
-                  </tr>
-                  <tr>
-                    <td> Haystack</td>
-                    <td>1</td>
-                    <td>$24.00</td>
-                  </tr>
-                  <tr>
-                    <td> Hangtown fry</td>
-                    <td>2</td>
-                    <td>$24.00</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="status">
-              <h3>Order Status </h3>
-              <form>
-                  <select name="statusName" id="statusId">
-                      <option value="Active">Active</option>
-                      <option value="Accepted">Accepted</option>
-                      <option value="Canceled">Canceled</option>
-                    </select>
-                    <button>Change status</button>
-              </form>
-            </div>
-          </div>
-          <div class="card">
-              <div class="details">
-                <div> <img src="./img/pass2.jpg" alt="user image"></div>
-                <div class="nameInfo">
-                  <p>Angel James</p>
-                  <p>Today at 12:30 PM</p>
-                </div>
-                <div class="moneyInfo">
-                  <p>Order id: <span>348</span></p>
-                  <p>Total: <span>$ 106.00</span></p>
-                </div>
-              </div>
-              <div class="quantity">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Food</th>
-                      <th>Quantity</th>
-                      <th>Price</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td> Energy bar</td>
-                      <td>3</td>
-                      <td>$24.00</td>
-                    </tr>
-                    <tr>
-                      <td> Engastration (e.g., Turducken)</td>
-                      <td>5</td>
-                      <td>$24.00</td>
-                    </tr>
-                    <tr>
-                      <td> Fajita</td>
-                      <td>2</td>
-                      <td>$24.00</td>
-                    </tr>
-                    <tr>
-                      <td> Greek-American cuisine</td>
-                      <td>7</td>
-                      <td>$24.00</td>
-                    </tr>
-                    <tr>
-                      <td>Grits</td>
-                      <td>3</td>
-                      <td>$24.00</td>
-                    </tr>
-                    <tr>
-                      <td> Goulash</td>
-                      <td>4</td>
-                      <td>$24.00</td>
-                    </tr>
-                    <tr>
-                      <td> Haystack</td>
-                      <td>1</td>
-                      <td>$24.00</td>
-                    </tr>
-                    <tr>
-                      <td> Hangtown fry</td>
-                      <td>2</td>
-                      <td>$24.00</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="status">
-                <h3>Order Status </h3>
-                <form>
-                    <select name="statusName" id="statusId">
-                        <option value="Active">Active</option>
-                        <option value="Accepted">Accepted</option>
-                        <option value="Canceled">Canceled</option>
-                      </select>
-                      <button>Change status</button>
-                </form>
-              </div>
-            </div>
-            <div class="card">
-                <div class="details">
-                  <div> <img src="./img/pass2.jpg" alt="user image"></div>
-                  <div class="nameInfo">
-                    <p>Angel James</p>
-                    <p>Today at 12:30 PM</p>
-                  </div>
-                  <div class="moneyInfo">
-                    <p>Order id: <span>348</span></p>
-                    <p>Total: <span>$ 106.00</span></p>
-                  </div>
-                </div>
-                <div class="quantity">
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Food</th>
-                        <th>Quantity</th>
-                        <th>Price</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td> Energy bar</td>
-                        <td>3</td>
-                        <td>$24.00</td>
-                      </tr>
-                      <tr>
-                        <td> Engastration (e.g., Turducken)</td>
-                        <td>5</td>
-                        <td>$24.00</td>
-                      </tr>
-                      <tr>
-                        <td> Fajita</td>
-                        <td>2</td>
-                        <td>$24.00</td>
-                      </tr>
-                      <tr>
-                        <td> Greek-American cuisine</td>
-                        <td>7</td>
-                        <td>$24.00</td>
-                      </tr>
-                      <tr>
-                        <td>Grits</td>
-                        <td>3</td>
-                        <td>$24.00</td>
-                      </tr>
-                      <tr>
-                        <td> Goulash</td>
-                        <td>4</td>
-                        <td>$24.00</td>
-                      </tr>
-                      <tr>
-                        <td> Haystack</td>
-                        <td>1</td>
-                        <td>$24.00</td>
-                      </tr>
-                      <tr>
-                        <td> Hangtown fry</td>
-                        <td>2</td>
-                        <td>$24.00</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="status">
-                  <h3>Order Status </h3>
-                  <form>
-                      <select name="statusName" id="statusId">
-                          <option value="Active">Active</option>
-                          <option value="Accepted">Accepted</option>
-                          <option value="Canceled">Canceled</option>
-                        </select>
-                        <button>Change status</button>
-                  </form>
-                </div>
-              </div>
-            
+        <div class="quantity">
+          <table>
+            <thead>
+              <tr>
+                <th>Food</th>
+                <th>Quantity</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> Energy bar</td>
+                <td>3</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td> Engastration (e.g., Turducken)</td>
+                <td>5</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td> Fajita</td>
+                <td>2</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td> Greek-American cuisine</td>
+                <td>7</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td>Grits</td>
+                <td>3</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td> Goulash</td>
+                <td>4</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td> Haystack</td>
+                <td>1</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td> Hangtown fry</td>
+                <td>2</td>
+                <td>$24.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="status">
+          <h3>Order Status </h3>
+          <form>
+            <select name="statusName" id="statusId">
+              <option value="Active">Active</option>
+              <option value="Accepted">Accepted</option>
+              <option value="Canceled">Canceled</option>
+            </select>
+            <button>Change status</button>
+          </form>
+        </div>
       </div>
-    </section>    
-    <script src="./js/admin.js"></script> 
-  </body>
+      <div class="card">
+        <div class="details">
+          <div> <img src="./img/pass2.jpg" alt="user image"></div>
+          <div class="nameInfo">
+            <p>Angel James</p>
+            <p>Today at 12:30 PM</p>
+          </div>
+          <div class="moneyInfo">
+            <p>Order id: <span>348</span></p>
+            <p>Total: <span>$ 106.00</span></p>
+          </div>
+        </div>
+        <div class="quantity">
+          <table>
+            <thead>
+              <tr>
+                <th>Food</th>
+                <th>Quantity</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> Energy bar</td>
+                <td>3</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td> Engastration (e.g., Turducken)</td>
+                <td>5</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td> Fajita</td>
+                <td>2</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td> Greek-American cuisine</td>
+                <td>7</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td>Grits</td>
+                <td>3</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td> Goulash</td>
+                <td>4</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td> Haystack</td>
+                <td>1</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td> Hangtown fry</td>
+                <td>2</td>
+                <td>$24.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="status">
+          <h3>Order Status </h3>
+          <form>
+            <select name="statusName" id="statusId">
+              <option value="Active">Active</option>
+              <option value="Accepted">Accepted</option>
+              <option value="Canceled">Canceled</option>
+            </select>
+            <button>Change status</button>
+          </form>
+        </div>
+      </div>
+      <div class="card">
+        <div class="details">
+          <div> <img src="./img/pass2.jpg" alt="user image"></div>
+          <div class="nameInfo">
+            <p>Angel James</p>
+            <p>Today at 12:30 PM</p>
+          </div>
+          <div class="moneyInfo">
+            <p>Order id: <span>348</span></p>
+            <p>Total: <span>$ 106.00</span></p>
+          </div>
+        </div>
+        <div class="quantity">
+          <table>
+            <thead>
+              <tr>
+                <th>Food</th>
+                <th>Quantity</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> Energy bar</td>
+                <td>3</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td> Engastration (e.g., Turducken)</td>
+                <td>5</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td> Fajita</td>
+                <td>2</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td> Greek-American cuisine</td>
+                <td>7</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td>Grits</td>
+                <td>3</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td> Goulash</td>
+                <td>4</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td> Haystack</td>
+                <td>1</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td> Hangtown fry</td>
+                <td>2</td>
+                <td>$24.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="status">
+          <h3>Order Status </h3>
+          <form>
+            <select name="statusName" id="statusId">
+              <option value="Active">Active</option>
+              <option value="Accepted">Accepted</option>
+              <option value="Canceled">Canceled</option>
+            </select>
+            <button>Change status</button>
+          </form>
+        </div>
+      </div>
+      <div class="card">
+        <div class="details">
+          <div> <img src="./img/pass2.jpg" alt="user image"></div>
+          <div class="nameInfo">
+            <p>Angel James</p>
+            <p>Today at 12:30 PM</p>
+          </div>
+          <div class="moneyInfo">
+            <p>Order id: <span>348</span></p>
+            <p>Total: <span>$ 106.00</span></p>
+          </div>
+        </div>
+        <div class="quantity">
+          <table>
+            <thead>
+              <tr>
+                <th>Food</th>
+                <th>Quantity</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> Energy bar</td>
+                <td>3</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td> Engastration (e.g., Turducken)</td>
+                <td>5</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td> Fajita</td>
+                <td>2</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td> Greek-American cuisine</td>
+                <td>7</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td>Grits</td>
+                <td>3</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td> Goulash</td>
+                <td>4</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td> Haystack</td>
+                <td>1</td>
+                <td>$24.00</td>
+              </tr>
+              <tr>
+                <td> Hangtown fry</td>
+                <td>2</td>
+                <td>$24.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="status">
+          <h3>Order Status </h3>
+          <form>
+            <select name="statusName" id="statusId">
+              <option value="Active">Active</option>
+              <option value="Accepted">Accepted</option>
+              <option value="Canceled">Canceled</option>
+            </select>
+            <button>Change status</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <script src="./js/admin.js"></script>
+</body>
+
 </html>

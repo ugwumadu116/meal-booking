@@ -110,7 +110,7 @@ li {
   justify-content: center;
   color: #fff;
 }
-#header i {
+#header .fa-bars {
   display: none;
 }
 #header h1 {
@@ -192,10 +192,12 @@ table thead th {
 tbody td {
   padding: 0px 10px;
 }
+#meals .mealheader,
 #menu .menuheader {
   margin-top: 70px;
   display: flex;
 }
+#meals .mealheader button,
 #menu .menuheader button {
   color: #fdf9f8;
   border: 2px solid transparent;
@@ -251,17 +253,21 @@ tbody td {
   margin: 10px;
 }
 #menu .card .price {
-  color: #1ec27b;
-  font-size: 18px;
-  margin-left: auto;
+  position: relative;
+  top: -192px;
+  left: 188px;
+  background: #1ec27b;
+  color: white;
+  font-size: 15px;
+  padding: 0 8px;
 }
 #meals .card .price {
   position: relative;
   top: -263px;
-  left: 170px;
+  left: 188px;
   background: #1ec27b;
   color: white;
-  font-size: 22px;
+  font-size: 15px;
   padding: 0 8px;
 }
 #meals .card .details button {
@@ -282,7 +288,7 @@ tbody td {
   #menu .container {
     justify-content: center;
   }
-  #header i {
+  #header .fa-bars {
     display: block;
     font-size: 25px;
     margin: 10px;
