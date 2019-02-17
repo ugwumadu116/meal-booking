@@ -48,7 +48,7 @@ const MealService = {
     const myMeal = mealData.meals.find(meal => meal.id === id);
     return myMeal;
   },
-  updateAMeal(id) {
+  updateAMeal(id, newMeal) {
     const myMeal = mealData.meals.find(meal => meal.id === id);
     const mealIndex = mealData.meals.indexOf(myMeal);
     const {
@@ -57,7 +57,7 @@ const MealService = {
       price,
       size,
       type,
-    } = myMeal;
+    } = newMeal;
     mealData.meals[mealIndex].name = name;
     mealData.meals[mealIndex].description = description;
     mealData.meals[mealIndex].price = price;
