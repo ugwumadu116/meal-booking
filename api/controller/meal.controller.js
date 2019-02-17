@@ -12,10 +12,12 @@ const mealController = {
     const meal = req.body;
     const {
       name,
+      description,
       price,
+      type,
       size,
     } = req.body;
-    if (name && price && size) {
+    if (name && price && size && description && type) {
       const createdMeal = MealService.createAMeal(meal);
       res.status(201).json({
         message: 'meal created',
@@ -29,7 +31,8 @@ const mealController = {
     }
   },
   findAMeal(req, res) {
-    const { id } = req.params;
+    const { mealId } = req.params;
+    const id = parseInt(mealId, 10);
     const meal = MealService.findAMeal(id);
     if (meal) {
       res.status(200).json({ meal, status: 200 });
@@ -38,10 +41,12 @@ const mealController = {
     }
   },
   updateAMeal(req, res) {
-    const { id } = req.params;
+    const { mealId } = req.params;
+    const id = parseInt(mealId, 10);
     const meal = MealService.findAMeal(id);
+    const newMeal = req.body;
     if (meal) {
-      const updateMeal = MealService.updateAMeal(id);
+      const updateMeal = MealService.updateAMeal(id, newMeal);
       res.status(201).json({
         message: 'meal updated',
         data: updateMeal,
@@ -51,13 +56,14 @@ const mealController = {
     }
   },
   removeAMeal(req, res) {
-    const { id } = req.params;
+    const { mealId } = req.params;
+    const id = parseInt(mealId, 10);
     const meal = MealService.findAMeal(id);
     if (meal) {
-      const updateMeal = MealService.removeAMeal(id);
+      const removeMeal = MealService.removeAMeal(id);
       res.status(200).json({
         message: 'meal removed',
-        data: updateMeal,
+        data: removeMeal,
       });
     } else {
       res.status(404).json({ status: 404, error: 'That record does not exist' });
