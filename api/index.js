@@ -2,6 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 
 import mealRoutes from './routes/meal.route';
+import menuRoutes from './routes/menu.route';
 
 const app = express();
 const PORT = 3000;
@@ -14,5 +15,6 @@ app.get('/', (req, res) => {
 });
 
 app.use(`${prefix}/meals`, mealRoutes);
+app.use(`${prefix}/menu`, menuRoutes);
 
 app.listen(PORT, () => console.log('conected'));

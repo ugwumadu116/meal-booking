@@ -1,11 +1,21 @@
+let today = new Date();
+let dd = today.getDate();
+let mm = today.getMonth() + 1;
+const yyyy = today.getFullYear();
+if (dd < 10) {
+  dd = 0 + dd;
+}
+if (mm < 10) {
+  mm = 0 + mm;
+}
+today = `${dd}/${mm}/${yyyy}`;
 export default {
   menus: [
     {
       id: 1,
-      date: '12/2/2019',
+      date: today,
       food: [
         {
-          id: 1,
           name: 'biscuit',
           description: 'sweet dring',
           price: '50',
@@ -13,26 +23,16 @@ export default {
           type: 'breakfast',
         },
         {
-          id: 2,
-          name: 'rice',
-          description: 'sweet rice',
+          name: 'cone',
+          description: 'sweet cone',
           price: '34',
-          size: 'large',
+          size: 'small',
           type: 'launch',
         },
         {
-          id: 3,
-          name: 'fufu and soup',
-          description: 'very strong food',
-          price: '79',
-          size: 'large',
-          type: 'dinner',
-        },
-        {
-          id: 4,
-          name: 'Cereal',
-          description: 'sweet cereal',
-          price: '90',
+          name: 'soup',
+          description: 'strong food',
+          price: '179',
           size: 'large',
           type: 'breakfast',
         },
@@ -43,74 +43,11 @@ export default {
       date: '12/2/2019',
       food: [
         {
-          id: 1,
           name: 'yam and stew',
           description: 'very strong and sweet food ',
           price: '150',
           size: 'large',
           type: 'launch',
-        },
-        {
-          id: 2,
-          name: 'cone',
-          description: 'sweet cone',
-          price: '34',
-          size: 'small',
-          type: 'launch',
-        },
-        {
-          id: 3,
-          name: 'soup',
-          description: 'strong food',
-          price: '179',
-          size: 'large',
-          type: 'breakfast',
-        },
-        {
-          id: 4,
-          name: 'Cereal',
-          description: 'sweet cereal',
-          price: '40',
-          size: 'small',
-          type: 'breakfast',
-        },
-      ],
-    },
-    {
-      id: 3,
-      date: '12/2/2019',
-      food: [
-        {
-          id: 1,
-          name: 'biscuit',
-          description: 'sweet dring',
-          price: '50',
-          size: 'medium',
-          type: 'breakfast',
-        },
-        {
-          id: 2,
-          name: 'rice',
-          description: 'sweet rice',
-          price: '34',
-          size: 'large',
-          type: 'launch',
-        },
-        {
-          id: 3,
-          name: 'fufu and soup',
-          description: 'very strong food',
-          price: '79',
-          size: 'large',
-          type: 'dinner',
-        },
-        {
-          id: 4,
-          name: 'Cereal',
-          description: 'sweet cereal',
-          price: '90',
-          size: 'large',
-          type: 'breakfast',
         },
       ],
     },
