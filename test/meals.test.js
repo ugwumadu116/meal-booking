@@ -3,7 +3,7 @@ import chaiHTTP from 'chai-http';
 import app from '../api/index';
 import MEAL from '../api/utils/dummyMealData';
 
-const { assert, expect, use } = chai;
+const { expect, use } = chai;
 
 use(chaiHTTP);
 const mealData = {
