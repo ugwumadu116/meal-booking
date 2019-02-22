@@ -20,6 +20,7 @@ const mealController = {
     if (name && price && size && description && type) {
       const createdMeal = MealService.createAMeal(meal);
       res.status(201).json({
+        status: 'success',
         message: 'meal created',
         data: createdMeal,
       });
@@ -35,7 +36,7 @@ const mealController = {
     const id = parseInt(mealId, 10);
     const meal = MealService.findAMeal(id);
     if (meal) {
-      res.status(200).json({ meal, status: 200 });
+      res.status(200).json({ data: meal, status: 200 });
     } else {
       res.status(404).json({ status: 404, error: 'That record does not exist' });
     }
@@ -48,6 +49,7 @@ const mealController = {
     if (meal) {
       const updateMeal = MealService.updateAMeal(id, newMeal);
       res.status(201).json({
+        status: 201,
         message: 'meal updated',
         data: updateMeal,
       });
@@ -62,6 +64,7 @@ const mealController = {
     if (meal) {
       const removeMeal = MealService.removeAMeal(id);
       res.status(200).json({
+        status: 200,
         message: 'meal removed',
         data: removeMeal,
       });

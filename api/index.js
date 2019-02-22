@@ -20,3 +20,5 @@ app.use(`${prefix}/menu`, menuRoutes);
 app.use(`${prefix}/orders`, orderRoute);
 
 app.listen(PORT, () => console.log('conected'));
+
+export default app;
