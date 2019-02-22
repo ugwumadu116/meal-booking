@@ -132,6 +132,7 @@ describe('API V1 Routes', () => {
         .end((err, res) => {
           expect(res.statusCode).to.eq(404);
           expect(res.body.status).to.eq(404);
+          expect(res.body.error).to.eql('That record does not exist');
         });
       done();
     });
