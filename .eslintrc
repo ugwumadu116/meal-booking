@@ -8,5 +8,10 @@
       "error",
       "windows"
     ]
+  },
+  "env": {
+    "commonjs": true,
+    "node": true,
+    "mocha": true
   }
 }
