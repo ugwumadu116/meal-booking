@@ -1,5 +1,6 @@
 import orderData from '../utils/dummyOrderData';
 import Order from '../models/order.model';
+import MealService from './meal.service';
 
 const orderService = {
   findAllOrders() {
@@ -8,30 +9,53 @@ const orderService = {
       const {
         id,
         status,
-        mealNumber,
+        mealQuantity,
         total,
         userId,
         addressId,
         mealId,
-        catererId,
       } = order;
       newOrder.id = id;
       newOrder.status = status;
-      newOrder.mealNumber = mealNumber;
+      newOrder.mealQuantity = mealQuantity;
       newOrder.total = total;
       newOrder.userId = userId;
       newOrder.addressId = addressId;
       newOrder.mealId = mealId;
-      newOrder.catererId = catererId;
       return newOrder;
     });
     return orders;
   },
 
   createAnOrder(order) {
-    const newId = orderData.orders.length + 1;
-    const newOrder = order;
-    newOrder.id = newId;
+    const {
+      mealQuantity,
+      userId,
+      addressId,
+      mealId,
+    } = order;
+    const SearchedMeal = MealService.findAMeal(mealId);
+    const activeOrders = orderData.orders.find(myOrder => myOrder.status === 'active' && myOrder.userId === userId);
+    if (activeOrders) {
+      activeOrders.mealId.push(SearchedMeal);
+      return activeOrders;
+    }
+
+    const { price: mealPrice } = SearchedMeal;
+    const totalPrice = mealPrice * mealQuantity;
+
+    const lastOrder = orderData.orders.length - 1;
+    const lastOrderId = orderData.orders[lastOrder].id;
+    const newOrderId = lastOrderId + 1;
+
+    const newOrder = new Order();
+    newOrder.id = newOrderId;
+    newOrder.status = 'active';
+    newOrder.mealQuantity = mealQuantity;
+    newOrder.total = totalPrice;
+    newOrder.userId = userId;
+    newOrder.addressId = addressId;
+    newOrder.mealId.push(SearchedMeal);
     newOrder.createdDate = new Date();
     newOrder.updatedDate = new Date();
     orderData.orders.push(newOrder);
@@ -44,19 +68,20 @@ const orderService = {
   },
 
   updateAnOrder(id, newOrder) {
-    const order = this.getSingleOrder(id);
+    const order = this.findAnOrder(id);
     const index = orderData.orders.indexOf(order);
     const {
+      userId,
+      addressId,
       status,
-      mealNumber,
-      mealId,
-      updatedDate,
+      mealQuantity,
     } = newOrder;
-
-    orderData.orders[index].status = status;
-    orderData.orders[index].mealNumber = mealNumber;
-    orderData.orders[index].mealId = mealId;
-    orderData.orders[index].updatedAt = updatedDate;
+    if (userId === 0) {
+      orderData.orders[index].status = status;
+    }
+    orderData.orders[index].addressId = addressId;
+    orderData.orders[index].mealQuantity = mealQuantity;
+    orderData.orders[index].updatedDate = new Date();
 
     return orderData.orders[index];
   },
