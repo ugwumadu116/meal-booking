@@ -23,6 +23,9 @@
   ],
   "author": "joel ugwumadu",
   "license": "MIT",
+  "engines": {
+    "node": "10.13.0"
+  },
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
