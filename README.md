@@ -78,6 +78,10 @@ https://github.com/ugwumadu116/meal-booking.git
 - Access endpoints on **localhost:3000**
 ## Running the tests
 Run `npm test` in the terminal for the cloned folder.
+## Heroku endpoints
+Base URL: https://mighty-beach-87584.herokuapp.com/ | https://git.heroku.com/mighty-beach-87584.git
+
+
 ## Built With
 * [Node.js](http://www.nodejs.org/) - Runtime-Enviroment
 
