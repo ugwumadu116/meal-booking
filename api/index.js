@@ -6,7 +6,7 @@ import menuRoutes from './routes/menu.route';
 import orderRoute from './routes/order.route';
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const prefix = '/api/v1';
 
 app.use(bodyParser.json());
