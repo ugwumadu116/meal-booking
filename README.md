@@ -88,6 +88,8 @@ Base URL: https://mighty-beach-87584.herokuapp.com/ | https://git.heroku.com/mig
 
 ## GitHub Pages
 URL: https://ugwumadu116.github.io/meal-booking/index.html
+## Heroku endpoints
+Base URL: https://limitless-reef-81996.herokuapp.com/
 
 ## Pivotal Tracker board
 URL:  https://www.pivotaltracker.com/n/projects/2243153
